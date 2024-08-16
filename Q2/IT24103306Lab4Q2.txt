@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+	public class IT24103306Lab4Q2{
+	public static void main(String[]args){
+	Scanner scanner=new Scanner(System.in);
+	double lab=0;
+
+	System.out.println("input exam marks");
+	double mk=scanner.nextDouble();
+	if(mk<0 || mk>100){
+	System.out.println("invalid number");
+	return;
+	}
+
+	
+
+	System.out.println("input exam LAB marks");
+	 lab=scanner.nextDouble();
+	if(lab<0 || lab>100){
+	System.out.println("invalid number");
+	return;
+	}
+	
+
+	System.out.println("input lab %");
+	double labp=scanner.nextDouble();
+	if(labp<0 || labp>100){
+	System.out.println("invalid percentage");
+	return;
+	}
+
+	
+
+	System.out.println("marks lab %");
+	double mkp=scanner.nextDouble();
+	if(mkp<0 || mkp>100){
+	System.out.println("invalid percentage");
+	return;
+	}
+
+	
+
+	//calculation
+
+	double x=(mk*mkp*0.01)+(lab*labp*0.01);
+	System.out.print("final marks :"+x);
+	}	
+}
